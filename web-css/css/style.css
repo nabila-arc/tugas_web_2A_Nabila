@@ -1,13 +1,13 @@
 /* membuat body berwarna abu abu dan fontnya Arial dan sans-serif ukuran ukuran 16px */
 body {
-    background-color: gray;
+    background-color: rgb(111, 215, 247);
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
 /* membuat canvas putih di tengah */
 .container {
-    background-color: white;
+    background-color:  rgb(248, 106, 241);
     margin: 20px auto;
     width: 800px;
 }
@@ -50,3 +50,56 @@ body {
     color: white;
 }
 
+/* untuk css banner */
+.banner {
+    height: 300px;
+    /* background-image: skyblue; */
+    /* berikan file gambar */
+    background-image: url("../img/gambar1.jpg");
+    /* atur ukuran gambar */
+    background-size: cover;
+    /* mengatur posisi gambar horizontal dan vertikal */
+    background-position: 0px -150px;
+    /* mengatur garis tepi tebal jenis warna */
+    border-top: 5px solid #f36c12;
+    border-bottom: 5px solid #4648f7;
+}
+
+/* untuk isi */
+.isi {
+    padding: 20px;
+}
+
+.isi h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.isi .penulis {
+    font-size: 14px;
+    /* agar agak naik */
+    margin-top: -10px;
+}
+
+.isi .penulis a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.isi p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* untuk footer */
+.footer {
+    background-color: rgb(248, 106, 241);
+    height: 50px;
+    padding: 2px;
+}
+
+.footer .copyright {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
