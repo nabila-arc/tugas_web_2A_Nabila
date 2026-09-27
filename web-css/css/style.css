@@ -1,13 +1,13 @@
 /* membuat body berwarna abu abu dan fontnya Arial dan sans-serif ukuran ukuran 16px */
 body {
-    background-color: rgb(111, 215, 247);
+    background-color: rgb(236, 235, 145);
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
 /* membuat canvas putih di tengah */
 .container {
-    background-color:  rgb(248, 106, 241);
+    background-color:  rgb(245, 180, 245);
     margin: 20px auto;
     width: 800px;
 }
@@ -93,7 +93,7 @@ body {
 
 /* untuk footer */
 .footer {
-    background-color: rgb(248, 106, 241);
+    background-color: rgb(245, 180, 245);
     height: 50px;
     padding: 2px;
 }
