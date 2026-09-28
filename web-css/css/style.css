@@ -1,14 +1,14 @@
 /* membuat body berwarna abu abu dan fontnya Arial dan sans-serif ukuran ukuran 16px */
 body {
-    background-color: rgb(236, 235, 145);
+    background-color: rgb(252, 252, 251);
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
 /* membuat canvas putih di tengah */
 .container {
-    background-color:  rgb(245, 180, 245);
-    margin: 20px auto;
+    background-color:  rgb(248, 250, 123);
+    margin: 0 auto;
     width: 800px;
 }
 /* mengatur jarak dalam header */
@@ -67,7 +67,7 @@ body {
 
 /* untuk isi */
 .isi {
-    padding: 20px;
+    padding: 30px;
 }
 
 .isi h2 {
@@ -100,6 +100,6 @@ body {
 
 .footer .copyright {
     font-size: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
