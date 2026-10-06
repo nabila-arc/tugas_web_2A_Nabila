@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kasir</title>
+</head>
+<body>
+    <h1>Kasir</h1>
+
+    <script type="text/javascript">
+        // 1. Input data dari pengguna
+        let nama_barang = prompt("Masukkan nama barang:");
+        let harga = parseFloat(prompt("Masukkan harga barang:"));
+        let jumlah = parseInt(prompt("Masukkan jumlah barang:"));
+
+        // 2. Perhitungan total belanja
+        let total_belanja = harga * jumlah;
+        let diskon = 0;
+
+        // 3. Diskon 10% jika total belanja > 50.000
+        if (total_belanja > 50000) {
+            diskon = total_belanja * 0.1;
+        }
+
+        // 4. Perhitungan total akhir pembayaran
+        let pembayaran = total_belanja - diskon;
+
+        // Fungsi bantu untuk mengubah angka menjadi format pemisah ribuan
+        function formatAngka(angka) {
+            return angka.toLocaleString('id-ID');
+        }
+
+        // 5. Tampilan Struk Belanja dengan bingkai '+'
+        document.write("<pre>");
+        document.write("++++++++++++++++++++++++++++++++++++++++++<br>");
+        document.write("+                                        +<br>");
+        document.write("+ nama      Harga      qty   total       +<br>");
+        document.write("+ " + nama_barang + "<br>");
+        document.write("+           " + formatAngka(harga) + "     " + jumlah + "     " + formatAngka(total_belanja) + "<br>");
+        document.write("+                                        +<br>");
+        document.write("+ total belanja      " + formatAngka(total_belanja) + "<br>");
+        document.write("+ diskon             " + formatAngka(diskon) + "<br>");
+        document.write("+ pembayaran         " + formatAngka(pembayaran) + "<br>");
+        document.write("+                                        +<br>");
+        document.write("++++++++++++++++++++++++++++++++++++++++++<br>");
+        document.write("</pre>");
+    </script>
+</body>
+</html>
