@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan Object</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        // Membuat object dengan constructor 
+
+        function orang(nama, gender, umur, alamat ) {
+            this.nama = nama;
+            this.gender = gender;
+            this.umur = umur;
+            this.alamat = alamat;
+        }
+
+        //membuat instance ibject
+        var Dewasa = new orang("Nabila", "P", 19,['jalan mangunsari', 'kab nganjuk']);
+
+        console.log(Dewasa);
+    </script>
+
+</body>
+</html>
